@@ -1,0 +1,114 @@
+// vars
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.App {
+  background: #070024;
+  overflow-y: hidden;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+
+  //   background: red;
+  white-space: nowrap;
+  color: white;
+}
+.header > h1 {
+  text-align: center;
+  font-size: 2rem;
+  flex: 1;
+}
+.header-icon {
+  flex-basis: 20%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.header-icon > svg {
+  background-color: hsl(233, 100%, 58%);
+
+  padding: 1em;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em !important;
+}
+.header-btn {
+  flex-basis: 20%;
+  text-align: right;
+}
+.header-btn > button {
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  font-weight: bold;
+  background: linear-gradient(hsl(45, 92%, 61%), hsl(42, 100%, 48%));
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.header-btn > button:hover {
+  background: linear-gradient(hsl(45, 92%, 56%), hsl(42, 100%, 43%));
+}
+// home body
+.home-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  z-index: 2;
+}
+.home-body > form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.home-body > form > button {
+  padding: 0.8em 1.8em 0.8em 1.8em;
+  margin-top: 2rem;
+  font-size: 1em;
+  border-radius: 0.3em;
+  background-color: hsl(233, 100%, 58%);
+  color: white;
+  border-radius: 2em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.home-body > form > button:hover,
+.header-icon > svg:hover {
+  background-color: hsl(233, 100%, 50%);
+}
+
+.App::before {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 50%;
+  transform: translate(-50%, 100%);
+  content: "";
+  box-shadow: 0 -15rem 10rem #390096;
+  background: transparent;
+}
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+}

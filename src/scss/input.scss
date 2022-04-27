@@ -1,0 +1,24 @@
+$small-size: "1em";
+$large-size: "2em";
+
+.input {
+  padding: 1rem;
+  border-radius: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 0.5em;
+}
+.input > svg {
+  font-size: 1.5rem;
+}
+.input input:focus .input {
+  outline: 1px solid #2b44ff;
+  background: #000 !important;
+}
+.input > input {
+  border: none;
+  outline: none;
+  font-size: $small-size;
+}
